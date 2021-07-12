@@ -1,0 +1,109 @@
+/* Todos elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Elementos com ID "titulo" */
+#titulo { 
+    font-family: "Brush Script MT", cursive;
+    color:#3333cc;
+    margin-left: 7%;
+}
+
+/* Elementos com ID subtitulo */
+#subtitulo {
+    font-family: "Brush Script MT", cursive;
+    margin-left: 10%;
+    color: #3333cc;
+}
+
+/* Elementos com ID "check" */
+#check {
+    display: inline-block;
+}
+
+/* Elementos de tag <fieldset> */
+fieldset {
+    border: none;
+}
+
+/* Elementos de tag <body> */
+body {
+    background-color: #0f0f3d;
+    font-family: "Brush Script MT", cursive;
+    font-size: 1em;
+    color:#ffffff;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+/* Elementos de tags <input>, <select>, <textarea> e <button> */
+input, select, textarea, button {
+    border-radius: 20px;
+    font-size: 1em;
+    color: #3333cc;
+}
+
+/* Elementos da classe "campo" */
+.campo {
+    margin-bottom: 1em;
+}
+
+/* selecionando classe campo que tenha label */
+.campo label {
+    margin-bottom: 0.2em;
+    color:#ffffff;
+    display: block;
+}
+
+/* Elementos com classe "grupo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo{
+    float: left;
+    margin-right:1em;
+}
+
+/* elementos com classe "campo" das tags <input> com atributo text e email, da tag <select> e <textarea> */
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #3399ff;
+    box-shadow: 2px 2px 2px rgba(153, 204, 255);
+    display:block; 
+}
+
+/* Elementos de classe "campo" de tag <select> e <option> */
+.campo select option {
+    padding-right: 1em;
+}
+
+/*  Elementos de classe "campo" com tag <input>, <select> e <textarea> todas com estado de pseudoclasse "focus" */
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: cornflowerblue;
+}
+
+/*  Elemento de classe "botao" */
+.botao {
+    font-size: 1.2em;
+    background:dodgerblue;
+    border: 0;
+    margin-bottom: 1em;
+    color: white;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    right: -50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/* elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    background:#ccbbff;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
